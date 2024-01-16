@@ -1,0 +1,164 @@
+body {
+    background: rgb(241, 238, 238);
+    margin: 0%;
+  }
+  header {
+    background-image: radial-gradient(rgb(100, 100, 255),rgb(136, 136, 255), rgb(241, 238, 238));
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .example-square {
+    position: relative;
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    font-size: large;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color: white;
+  }
+  .subtitle {
+    color: rgb(214, 214, 214);
+    font-family: Trebuchet MS;
+    font-size: small;
+  }
+  .card {
+    background: white;
+    margin: 40px 50px 50px 50px;
+    padding: 0 50px 50px 50px;
+  }
+  .result {
+    display: none;
+  }
+  .figure h1 {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .figure p {
+    text-align: center;
+  }
+  .corner-label {
+    position: absolute;
+    font-weight: bold;
+  }
+  .top-left {
+    top: -15px;
+    left: -15px;
+  }
+  .top-right {
+    top: -15px;
+    right: -15px;
+  }
+  .bottom-left {
+    bottom: -15px;
+    left: -15px;
+  }
+  .bottom-right {
+    bottom: -15px;
+    right: -15px;
+  }
+  .formula-description {
+    text-align: left;
+  }
+  .formula-description .rumus {
+    text-align: center;
+    font-weight: bold;
+  }
+  .box {
+    border: 1px solid gray;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .judul {
+    color: white;
+    background-image: radial-gradient(rgb(100, 100, 255),rgb(136, 136, 255), rgb(241, 238, 238));
+    padding: 30px;
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+
+  button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(100, 100, 255);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 10px;
+  }
+
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  input {
+    width: 1000px;
+    height: 50px;
+  }
+
+  footer {
+    text-align: center;
+    font-weight: 100;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .container {
+      flex-direction: column;
+    }
+    .example-square {
+      margin: 0 auto;
+    }
+    .card {
+      margin: 20px;
+    }
+    .reset {
+      left: 0;
+      margin: 0 auto 20px auto;
+    }
+    input {
+      width: 100%;
+    }
+  }
+
+  footer {
+    color: aliceblue;
+    background-image: radial-gradient(rgb(100, 100, 255),rgb(136, 136, 255), rgb(241, 238, 238));
+    text-align: center;
+    padding: 20px 20px;
+    
+  }
+  
